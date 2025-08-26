@@ -1,0 +1,44 @@
+/* Switch component styles */
+.switch {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.switch input {
+	display: none;
+}
+
+.slider {
+	width: 40px;
+	height: 20px;
+	background: #ccc;
+	border-radius: 20px;
+	position: relative;
+	transition: background 0.3s;
+}
+
+.slider::before {
+	content: '';
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	width: 16px;
+	height: 16px;
+	background: #fff;
+	border-radius: 50%;
+	transition: transform 0.3s;
+}
+
+input:checked + .slider {
+	background: #333;
+}
+
+input:checked + .slider::before {
+	transform: translateX(20px);
+	background: #f1f1f1;
+}
+
+.switch-label {
+	font-size: 0.9rem;
+}

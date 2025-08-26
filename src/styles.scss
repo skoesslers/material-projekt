@@ -1,0 +1,142 @@
+
+// Include theming for Angular Material with `mat.theme()`.
+// This Sass mixin will define CSS variables that are used for styling Angular Material
+// components according to the Material 3 design spec.
+// Learn more about theming and how to use it for your application's
+// custom components at https://material.angular.dev/guide/theming
+@use '@angular/material' as mat;
+
+html {
+  @include mat.theme((
+    color: (
+      primary: mat.$cyan-palette,
+      tertiary: mat.$orange-palette,
+    ),
+    typography: Albert Sans,
+    density: 0,
+  ));
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  color-scheme: light;
+  background-color: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-body-medium);
+  font-family: "Albert Sans", Roboto, "Helvetica Neue", sans-serif;
+}
+
+body.dark-mode {
+  color-scheme: dark;
+  background-color: #181818;
+  color: #f1f1f1;
+  background-color: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+}
+
+html{
+  
+--mat-sys-primary: light-dark(#d65a00, #ff8c42); /* Vibrant orange */
+--mat-sys-on-primary: light-dark(#ffffff, #3a1f00); /* High contrast text */
+--mat-sys-primary-container: light-dark(#ffdcc7, #723600); /* Soft orange container */
+--mat-sys-on-primary-container: light-dark(#502400, #ffdcc7);
+
+--mat-sys-surface-tint: light-dark(#d65a00, #ff8c42); /* Tint with orange */
+--mat-sys-inverse-primary: light-dark(#ff8c42, #d65a00);
+
+--mat-sys-corner-extra-large: 16px;
+--mat-sys-corner-large: 12px;
+--mat-sys-corner-medium: 8px;
+--mat-sys-corner-small: 4px;
+--mat-sys-corner-extra-small: 2px;
+
+
+--mat-sys-level1: 0px 1px 2px rgba(0, 0, 0, 0.05);
+--mat-sys-level2: 0px 2px 4px rgba(0, 0, 0, 0.05);
+
+--mat-sys-level0: none;
+--mat-sys-level1: none;
+--mat-sys-level2: none;
+--mat-sys-level3: none;
+--mat-sys-level4: none;
+--mat-sys-level5: none;
+
+--mat-sys-secondary: light-dark(#a65c00, #ffb877); /* Warm amber */
+--mat-sys-secondary-container: light-dark(#ffe2cc, #5c2c00);
+--mat-sys-secondary-fixed: light-dark(#ffe2cc, #ffe2cc);
+--mat-sys-secondary-fixed-dim: light-dark(#ffb877, #ffb877);
+--mat-sys-on-secondary: light-dark(#ffffff, #3a1f00);
+--mat-sys-on-secondary-container: light-dark(#5c2c00, #ffe2cc);
+--mat-sys-on-secondary-fixed: light-dark(#3a1f00, #3a1f00);
+--mat-sys-on-secondary-fixed-variant: light-dark(#5c2c00, #5c2c00);
+
+--mat-sys-tertiary: light-dark(#964900, #ffb787); /* Already orange-toned */
+--mat-sys-tertiary-container: light-dark(#ffdcc7, #723600);
+--mat-sys-tertiary-fixed: light-dark(#ffdcc7, #ffdcc7);
+--mat-sys-tertiary-fixed-dim: light-dark(#ffb787, #ffb787);
+--mat-sys-on-tertiary: light-dark(#ffffff, #502400);
+--mat-sys-on-tertiary-container: light-dark(#723600, #ffdcc7);
+--mat-sys-on-tertiary-fixed: light-dark(#311300, #311300);
+--mat-sys-on-tertiary-fixed-variant: light-dark(#723600, #723600);
+
+
+}
+
+.mat-mdc-icon-button{
+      display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.material-symbols-outlined.weight-200 {
+  font-variation-settings: 'wght' 200;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'wght' 200;
+}
+
+.material-symbols-outlined, .mat-icon {
+  font-family: 'Material Symbols Outlined';
+  font-weight: 200;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.mat-icon {
+  font-family: 'Material Symbols Outlined' !important;
+  font-weight: 200 !important;
+}
+
+.mat-icon {
+  font-family: 'Material Symbols Outlined' !important;
+  font-weight: 200 !important;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+

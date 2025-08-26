@@ -1,0 +1,21 @@
+section {
+  display: table;
+  margin: 8px;
+}
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  width: 120px;
+  vertical-align: top;
+}
+.example-button-row {
+  display: table-cell;
+  vertical-align: middle;
+}
+.example-button-row button {
+  margin: 8px;
+}
+mat-divider {
+  margin: 16px 0;
+}

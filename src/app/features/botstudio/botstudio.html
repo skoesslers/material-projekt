@@ -1,0 +1,42 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Botstudio</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <section>
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Prompt Name</mat-label>
+          <input matInput placeholder="" value="">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Prompt Description</mat-label>
+          <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+        </mat-form-field>
+
+        <section>
+          <h3>Stil</h3>
+          <mat-chip-listbox aria-label="Basic chips">
+            <mat-chip-option>formell</mat-chip-option>
+            <mat-chip-option color="primary">informell</mat-chip-option>
+          </mat-chip-listbox>
+        </section>
+
+        <section>
+          <h3>Tonalität</h3>
+          <mat-chip-listbox aria-label="Basic chips">
+            <mat-chip-option>humorvoll</mat-chip-option>
+            <mat-chip-option color="primary">jugendlich</mat-chip-option>
+            <mat-chip-option color="primary">poetisch</mat-chip-option>
+            <mat-chip-option color="primary">business</mat-chip-option>
+          </mat-chip-listbox>
+        </section>
+
+      </form>
+    </section>
+
+    <mat-divider></mat-divider>
+
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,93 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Basic Chips Examples</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <section>
+      <h3>Basic Chips</h3>
+      <mat-chip-listbox aria-label="Basic chips">
+        <mat-chip-option>Angular</mat-chip-option>
+        <mat-chip-option color="primary">Material</mat-chip-option>
+        <mat-chip-option color="accent">Components</mat-chip-option>
+        <mat-chip-option color="warn">Demo</mat-chip-option>
+      </mat-chip-listbox>
+    </section>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Chips with Icons</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <section>
+      <h3>Icon Chips</h3>
+      <mat-chip-listbox aria-label="Icon chips">
+        <mat-chip-option>
+          <mat-icon matChipAvatar>code</mat-icon>
+          Angular
+        </mat-chip-option>
+        <mat-chip-option color="primary">
+          <mat-icon matChipAvatar>palette</mat-icon>
+          Material
+        </mat-chip-option>
+        <mat-chip-option color="accent">
+          <mat-icon matChipAvatar>widgets</mat-icon>
+          Components
+        </mat-chip-option>
+        <mat-chip-option disabled color="warn">
+          <mat-icon matChipAvatar>block</mat-icon>
+          Demo
+        </mat-chip-option>
+      </mat-chip-listbox>
+    </section>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Removable Chips</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <section>
+      <h3>Removable Chips</h3>
+      <mat-chip-listbox aria-label="Removable chips">
+        <mat-chip-option removable>
+          Angular
+          <button matChipRemove>
+            <mat-icon>cancel</mat-icon>
+          </button>
+        </mat-chip-option>
+        <mat-chip-option color="primary" removable>
+          Material
+          <button matChipRemove>
+            <mat-icon>cancel</mat-icon>
+          </button>
+        </mat-chip-option>
+        <mat-chip-option color="accent" removable>
+          Components
+          <button matChipRemove>
+            <mat-icon>cancel</mat-icon>
+          </button>
+        </mat-chip-option>
+      </mat-chip-listbox>
+    </section>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Selectable Chips</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <section>
+      <h3>Selectable Chips</h3>
+      <mat-chip-listbox aria-label="Selectable chips" multiple>
+        <mat-chip-option>Angular</mat-chip-option>
+        <mat-chip-option color="primary">Material</mat-chip-option>
+        <mat-chip-option color="accent">Components</mat-chip-option>
+        <mat-chip-option color="warn">Demo</mat-chip-option>
+      </mat-chip-listbox>
+    </section>
+  </mat-card-content>
+</mat-card>

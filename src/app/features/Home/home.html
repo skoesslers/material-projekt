@@ -1,0 +1,16 @@
+<div class="overview-container">
+  <ng-container *ngFor="let feature of features">
+    <mat-card class="feature-card" appearance="outlined">
+      <mat-card-header>
+        <mat-icon mat-card-avatar>{{ feature.icon }}</mat-icon>
+        <mat-card-title>{{ feature.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ feature.description }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a mat-button color="primary" [routerLink]="feature.path">Open</a>
+      </mat-card-actions>
+    </mat-card>
+  </ng-container>
+</div>

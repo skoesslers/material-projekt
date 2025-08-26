@@ -1,0 +1,88 @@
+<div class="app-container">
+  <!-- Nav Rail -->
+  <div class="nav-rail">
+    <div class="nav-rail-top">
+      <a class="logo" href="/">
+        <img src="https://vacapo.cc/wp-content/uploads/vacapo_logo_d.svg" alt="Vacapo Logo" class="logo-image">
+      </a>
+      <button mat-icon-button (click)="toggleSidenav()" [class.active]="showSidenav" title="Filters" aria-label="Open filters">
+        <mat-icon>tune</mat-icon>
+      </button>
+      <div class="nav-rail-items">
+        @for (item of navigationItems; track item.name) {
+          <a mat-icon-button [routerLink]="item.route" class="nav-rail-item" [title]="item.name">
+            <mat-icon class="nav-rail__icon">{{item.icon}}</mat-icon>
+          </a>
+        }
+      </div>
+    </div>
+    <div class="nav-rail-bottom">
+      
+      <button mat-icon-button 
+        (click)="toggleDarkMode()" 
+        class="theme-toggle" 
+        [title]="isDarkMode ? 'Turn on light mode' : 'Turn on dark mode'">
+        <mat-icon>{{ isDarkMode ? 'dark_mode' : 'light_mode' }}</mat-icon>
+      </button>
+    </div>
+  </div>
+  <!-- Main Content Area -->
+  <mat-sidenav-container>
+    <mat-sidenav [opened]="showSidenav"  mode="side" position="start" (backdropClick)="toggleSidenav()" class="customize-sidenav">
+      <div class="sidenav-header">
+        <mat-icon>tune</mat-icon>
+        <h4>Customize</h4>
+        <span style="flex:1 1 auto"></span>
+        <button mat-icon-button (click)="toggleSidenav()" aria-label="Close filters">
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
+
+      <!-- botstudio specific filters -->
+      <div *ngIf="currentRoute === '/botstudio'" class="sidenav-section">
+        <h5>Botstudio filters</h5>
+        <mat-form-field appearance="outline">
+          <mat-label>Model</mat-label>
+          <mat-select>
+            <mat-option value="gpt-4">gpt-4</mat-option>
+            <mat-option value="gpt-3.5">gpt-3.5</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <h6>Tags</h6>
+        <mat-chip-listbox>
+          <mat-chip-option>assistant</mat-chip-option>
+          <mat-chip-option>assistant+voice</mat-chip-option>
+          <mat-chip-option>experimental</mat-chip-option>
+        </mat-chip-listbox>
+      </div>
+
+      <!-- inputs specific filters -->
+      <div *ngIf="currentRoute === '/inputs'" class="sidenav-section">
+        <h5>Inputs filters</h5>
+        <mat-form-field appearance="outline">
+          <mat-label>Category</mat-label>
+          <mat-select>
+            <mat-option value="text">Text</mat-option>
+            <mat-option value="media">Media</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <h6>Style</h6>
+        <mat-chip-listbox>
+          <mat-chip-option>formal</mat-chip-option>
+          <mat-chip-option>informal</mat-chip-option>
+          <mat-chip-option selected>neutral</mat-chip-option>
+        </mat-chip-listbox>
+      </div>
+    </mat-sidenav>
+    
+    <mat-sidenav-content>
+      <app-header></app-header>
+      <div class="content-container">
+        <router-outlet></router-outlet>
+      </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+

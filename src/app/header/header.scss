@@ -1,0 +1,15 @@
+.custom-header {
+  border-radius: var(--mat-sys-corner-medium);
+  //background-color: var(--mat-sys-primary);
+  color: var(--mat-sys-on-primary);
+  padding: 0 1rem;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

@@ -1,0 +1,5 @@
+.demo-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.example-full-width { width: 100%; }
+.radio-row { margin: 8px 0; display: flex; gap: 12px; }
+.slider-row { display: flex; align-items: center; gap: 16px; }
+mat-card { padding: 12px; }
