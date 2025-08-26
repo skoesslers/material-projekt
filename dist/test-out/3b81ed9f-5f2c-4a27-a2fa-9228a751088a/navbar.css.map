@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/navbar/navbar.scss"],
+  "sourcesContent": ["/* Switch component styles */\r\n.switch {\r\n\tdisplay: flex;\r\n\talign-items: center;\r\n\tgap: 0.5rem;\r\n}\r\n\r\n.switch input {\r\n\tdisplay: none;\r\n}\r\n\r\n.slider {\r\n\twidth: 40px;\r\n\theight: 20px;\r\n\tbackground: #ccc;\r\n\tborder-radius: 20px;\r\n\tposition: relative;\r\n\ttransition: background 0.3s;\r\n}\r\n\r\n.slider::before {\r\n\tcontent: '';\r\n\tposition: absolute;\r\n\tleft: 2px;\r\n\ttop: 2px;\r\n\twidth: 16px;\r\n\theight: 16px;\r\n\tbackground: #fff;\r\n\tborder-radius: 50%;\r\n\ttransition: transform 0.3s;\r\n}\r\n\r\ninput:checked + .slider {\r\n\tbackground: #333;\r\n}\r\n\r\ninput:checked + .slider::before {\r\n\ttransform: translateX(20px);\r\n\tbackground: #f1f1f1;\r\n}\r\n\r\n.switch-label {\r\n\tfont-size: 0.9rem;\r\n}\r\n"],
+  "mappings": ";AACA,CAAA;AACC,WAAA;AACA,eAAA;AACA,OAAA;;AAGD,CANA,OAMA;AACC,WAAA;;AAGD,CAAA;AACC,SAAA;AACA,UAAA;AACA,cAAA;AACA,iBAAA;AACA,YAAA;AACA,cAAA,WAAA;;AAGD,CATA,MASA;AACC,WAAA;AACA,YAAA;AACA,QAAA;AACA,OAAA;AACA,SAAA;AACA,UAAA;AACA,cAAA;AACA,iBAAA;AACA,cAAA,UAAA;;AAGD,KAAA,SAAA,EAAA,CArBA;AAsBC,cAAA;;AAGD,KAAA,SAAA,EAAA,CAzBA,MAyBA;AACC,aAAA,WAAA;AACA,cAAA;;AAGD,CAAA;AACC,aAAA;;",
+  "names": []
+}

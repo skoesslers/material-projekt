@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/header/header.scss"],
+  "sourcesContent": [".custom-header {\r\n  border-radius: var(--mat-sys-corner-medium);\r\n  //background-color: var(--mat-sys-primary);\r\n  color: var(--mat-sys-on-primary);\r\n  padding: 0 1rem;\r\n}\r\n\r\n.logo {\r\n  font-weight: 600;\r\n  font-size: 1.25rem;\r\n}\r\n\r\n.spacer {\r\n  flex: 1 1 auto;\r\n}"],
+  "mappings": ";AAAA,CAAA;AACE,iBAAA,IAAA;AAEA,SAAA,IAAA;AACA,WAAA,EAAA;;AAGF,CAAA;AACE,eAAA;AACA,aAAA;;AAGF,CAAA;AACE,QAAA,EAAA,EAAA;;",
+  "names": []
+}
